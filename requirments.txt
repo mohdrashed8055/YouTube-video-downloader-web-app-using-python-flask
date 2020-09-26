@@ -1,0 +1,9 @@
+*** Open your Command prompt or Anaconda prompt and install necessary packages that requires for downloading YouTube videos as below:
+
+1) pip install Flask
+
+2) pip install youtube_dl
+
+3) pip install global-py 
+
+4) pip install global
