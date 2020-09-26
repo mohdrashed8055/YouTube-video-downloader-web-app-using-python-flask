@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+		<meta charset="utf-8">
+		<title>YouTube Video Downloader</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='youtube_favicon.ico') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+		 <!-- Website Title -->
+    	<div class="container">
+            <h1 class='container-heading' style="color:white;"><span class="serif">YouTube Video Downloader</span></h1>
+            <div class='description'>
+    			<br><p>Welcome to YouTube Video Downloader Web App</p>
+    		</div>
+    	</div>
+   
+		 <!-- Download Area -->
+		<form align="center" action="{{ url_for('download')}}"method="post">
+
+			<br><br><br><br>
+			<input align="center" class="form-input" type="text" name="link" size='50' placeholder="Copy link of YouTube video & Paste here" required="required" />
+			<br><br><br>
+        
+			<input type="submit" class="my-cta-button" value="Download">
+        </form>
+       <br>
+		</spam>
+             <h2 align="center"> {{status_text}} </h2>
+		</div>	
+
+		<!-- GitHub Profile -->
+		<a href="https://github.com/mohdrashed8055" target="_blank" style="positon:fixed"><img style="position: fixed; top: 0; left: 0; border: 0;z-index:100000" src="//s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub" /></a>	
+	</body>
+</html>
